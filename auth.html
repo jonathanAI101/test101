@@ -476,7 +476,7 @@
     </div>
 
     <!-- Edit Profile Modal -->
-    <div id="editProfileModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; z-index: 2000;">
+    <div id="editProfileModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); align-items: center; justify-content: center; z-index: 2000;">
         <div class="auth-box" style="max-width: 400px;">
             <h2 style="margin-bottom: 20px; color: var(--dark);">编辑个人信息</h2>
             <form id="editProfileForm">
@@ -492,7 +492,7 @@
     </div>
 
     <!-- Change Password Modal -->
-    <div id="changePasswordModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; z-index: 2000;">
+    <div id="changePasswordModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); align-items: center; justify-content: center; z-index: 2000;">
         <div class="auth-box" style="max-width: 400px;">
             <h2 style="margin-bottom: 20px; color: var(--dark);">修改密码</h2>
             <form id="changePasswordForm">
@@ -527,7 +527,7 @@
                 document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
                 document.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
                 tab.classList.add('active');
-                document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+                document.querySelector(`.auth-form[data-tab="${tabName}"]`).classList.add('active');
             });
         });
 
