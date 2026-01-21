@@ -265,6 +265,105 @@
             color: var(--gray);
         }
 
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .skills-section {
+            background: var(--light);
+            border-radius: 16px;
+            padding: 40px;
+        }
+
+        .skills-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 24px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-category h4 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            padding: 8px 14px;
+            background: var(--white);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--dark);
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-text h2 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Footer */
         footer {
             background: var(--darker);
@@ -436,6 +535,58 @@
                             <span class="tag">React Native</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>关于我</h3>
+                    <h2>热爱代码，追求卓越</h2>
+                    <p>我是一名拥有多年经验的全栈开发者，专注于构建高性能、用户友好的Web应用。我相信好的代码不仅是功能性的，更应该是优雅和可维护的。</p>
+                    <p>在工作中，我注重细节，追求完美，同时也乐于学习新技术，不断挑战自己。无论是前端交互还是后端架构，我都能提供专业的解决方案。</p>
+                </div>
+                <div class="skills-section">
+                    <h3>技术栈</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>前端开发</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Vue.js</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>后端开发</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Go</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>移动开发</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React Native</span>
+                                <span class="skill-tag">Flutter</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>工具与其他</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
                         </div>
                     </div>
                 </div>
